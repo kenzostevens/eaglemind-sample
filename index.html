@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EagleMind Consultancies Co. W.L.L. | Inspiring Beyond Expectation</title>
-  <meta name="description" content="EagleMind Consultancies helps entrepreneurs and educators build sustainable businesses through consultancy, coaching, and hands-on training in the Kingdom of Bahrain.">
+  <meta name="description"
+    content="EagleMind Consultancies helps entrepreneurs and educators build sustainable businesses through consultancy, coaching, and hands-on training in the Kingdom of Bahrain.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Syne:wght@500;600;700;800&amp;display=swap"
+    rel="stylesheet">
   <noscript>
     <style>
       body {
@@ -1254,8 +1258,6 @@
     }
 
     .service-card {
-      position: sticky;
-      top: 7.5rem;
       overflow: hidden;
       border-radius: 2rem;
       padding: 1.2rem;
@@ -1264,21 +1266,6 @@
       color: var(--text);
       border: 1px solid rgba(255, 255, 255, 0.5);
       box-shadow: 0 28px 64px rgba(0, 0, 0, 0.18);
-      z-index: 1;
-    }
-
-    .service-card:nth-child(1) {
-      z-index: 3;
-    }
-
-    .service-card:nth-child(2) {
-      top: 10rem;
-      z-index: 2;
-    }
-
-    .service-card:nth-child(3) {
-      top: 12.5rem;
-      z-index: 1;
     }
 
     .service-card__inner {
@@ -1370,6 +1357,11 @@
       font-weight: 700;
       letter-spacing: -0.02em;
       margin-top: 0.2rem;
+      transition: gap 0.35s ease;
+    }
+
+    .service-card__cta:hover {
+      gap: 1rem;
     }
 
     .service-card__cta svg {
@@ -1392,9 +1384,14 @@
 
     .service-card__media img {
       height: 100%;
+      min-height: 320px;
       transform: scale(1.08) translateY(var(--parallax-shift, 0px));
       transition: transform 0.5s ease;
       filter: saturate(0.88);
+    }
+
+    .service-card:hover .service-card__media img {
+      transform: scale(1.05);
     }
 
     .service-card__media::after {
@@ -2213,15 +2210,19 @@
       from {
         transform: translate3d(0, 0, 0);
       }
+
       to {
         transform: translate3d(-50%, 0, 0);
       }
     }
 
     @keyframes drift {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translate3d(0, 0, 0);
       }
+
       50% {
         transform: translate3d(0, 16px, 0);
       }
@@ -2231,25 +2232,32 @@
       from {
         transform: rotate(0deg);
       }
+
       to {
         transform: rotate(360deg);
       }
     }
 
     @keyframes floatSlow {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translate3d(0, 0, 0) scale(1);
       }
+
       50% {
         transform: translate3d(0, -16px, 0) scale(1.04);
       }
     }
 
     @keyframes pulse {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: scale(1);
         opacity: 0.9;
       }
+
       50% {
         transform: scale(0.82);
         opacity: 0.55;
@@ -2257,6 +2265,7 @@
     }
 
     @media (max-width: 1180px) {
+
       .hero__layout,
       .about__layout,
       .program__stage,
@@ -2292,6 +2301,7 @@
     }
 
     @media (max-width: 980px) {
+
       .nav__links,
       .nav__actions {
         display: none;
@@ -2311,13 +2321,6 @@
 
       .hero__meta {
         grid-template-columns: 1fr;
-      }
-
-      .service-card,
-      .service-card:nth-child(2),
-      .service-card:nth-child(3) {
-        position: relative;
-        top: 0;
       }
 
       .service-card__inner {
@@ -2831,6 +2834,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="preloader" id="preloader" aria-hidden="true">
     <div class="preloader__content">
@@ -2872,7 +2876,8 @@
         </a>
       </div>
 
-      <button class="nav__toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav">
+      <button class="nav__toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="mobileNav">
         <span></span>
       </button>
     </div>
@@ -2916,17 +2921,20 @@
           <div class="eyebrow" data-reveal="left">Consultancy &middot; Education &middot; Growth</div>
           <h1 class="hero__title">
             <span class="line" data-reveal="left" style="--delay: 0.05s;"><span>Inspiring Beyond</span></span>
-            <span class="line" data-reveal="left" style="--delay: 0.12s;"><span class="accent-serif">Expectation</span></span>
+            <span class="line" data-reveal="left" style="--delay: 0.12s;"><span
+                class="accent-serif">Expectation</span></span>
           </h1>
           <p class="hero__lede" data-reveal="left" style="--delay: 0.18s;">
-            We help entrepreneurs and educators build sustainable businesses through consultancy, coaching, and hands-on training right here in the Kingdom of Bahrain.
+            We help entrepreneurs and educators build sustainable businesses through consultancy, coaching, and hands-on
+            training right here in the Kingdom of Bahrain.
           </p>
           <div class="hero__actions" data-reveal="left" style="--delay: 0.25s;">
             <a href="#contact" class="button button--primary magnetic">
               <span>Book a Consultation</span>
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </a>
             <a href="#services" class="button button--secondary magnetic">
@@ -2936,11 +2944,13 @@
           <div class="hero__meta" data-reveal="left" style="--delay: 0.32s;">
             <div class="hero__meta-card">
               <strong>Bahrain-based</strong>
-              <span>Serving founders, educators, and growing institutions with local insight and hands-on support.</span>
+              <span>Serving founders, educators, and growing institutions with local insight and hands-on
+                support.</span>
             </div>
             <div class="hero__meta-card">
               <strong>Since 2020</strong>
-              <span>Built during a period of uncertainty and designed to help others move forward with confidence.</span>
+              <span>Built during a period of uncertainty and designed to help others move forward with
+                confidence.</span>
             </div>
             <div class="hero__meta-card">
               <strong>Employee-Partnership</strong>
@@ -2953,7 +2963,9 @@
           <div class="hero-surface" aria-hidden="true"></div>
           <div class="hero__collage" id="heroCollage">
             <article class="hero-card hero-card--one">
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Modern premium office interior" data-parallax="0.08">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                alt="Modern premium office interior" data-parallax="0.08">
               <div class="hero-card__caption">
                 <div class="fine-print">Consultancy</div>
                 <strong>Strategy grounded in execution, not just presentation.</strong>
@@ -2961,7 +2973,9 @@
             </article>
 
             <article class="hero-card hero-card--two">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Collaborative team session" data-parallax="-0.06">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                alt="Collaborative team session" data-parallax="-0.06">
               <div class="hero-card__caption">
                 <div class="fine-print">Growth</div>
                 <strong>Built for founders, SMEs, and institutions ready to scale with clarity.</strong>
@@ -2969,7 +2983,9 @@
             </article>
 
             <article class="hero-card hero-card--three">
-              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Education and training environment" data-parallax="0.1">
+              <img
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="Education and training environment" data-parallax="0.1">
               <div class="hero-card__caption">
                 <div class="fine-print">Education</div>
                 <strong>Programs that move from theory into employable capability.</strong>
@@ -3013,15 +3029,20 @@
       <div class="shell about__layout">
         <div class="about__copy">
           <div class="eyebrow" data-reveal="left">About</div>
-          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">Building businesses that <span class="accent-serif">last</span>.</h2>
+          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">Building businesses that <span
+              class="accent-serif">last</span>.</h2>
           <p data-reveal="left" style="--delay: 0.1s;">
-            Eagle Mind Consultancies Co. W.L.L. is a Bahrain-based firm built on a simple belief: the best businesses grow when the people inside them grow too.
+            Eagle Mind Consultancies Co. W.L.L. is a Bahrain-based firm built on a simple belief: the best businesses
+            grow when the people inside them grow too.
           </p>
           <p data-reveal="left" style="--delay: 0.15s;">
-            Founded during the global shift of 2020, we launched at a time when many businesses were pulling back. We chose to move forward, investing our capital and expertise to serve the local economy and create something different.
+            Founded during the global shift of 2020, we launched at a time when many businesses were pulling back. We
+            chose to move forward, investing our capital and expertise to serve the local economy and create something
+            different.
           </p>
           <p data-reveal="left" style="--delay: 0.2s;">
-            That difference is our Employee-Partnership model. At Eagle Mind, team members do not just work for us. They grow with us, develop into partners, and launch ventures of their own along the way.
+            That difference is our Employee-Partnership model. At Eagle Mind, team members do not just work for us. They
+            grow with us, develop into partners, and launch ventures of their own along the way.
           </p>
           <div class="quote-line" data-reveal="left" style="--delay: 0.25s;">
             Sustainable growth starts with <span class="accent-serif">shared opportunity</span>.
@@ -3055,15 +3076,19 @@
           <div class="story-card" data-reveal="up" style="--delay: 0.2s;">
             <strong>The EagleMind difference</strong>
             <p>
-              We connect human capital, strategic structure, and practical delivery. The result is a consultancy that can advise, train, mentor, and help execute without losing the bigger picture.
+              We connect human capital, strategic structure, and practical delivery. The result is a consultancy that
+              can advise, train, mentor, and help execute without losing the bigger picture.
             </p>
           </div>
 
           <div class="about-visual" data-reveal="mask" style="--delay: 0.1s;">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Business planning workspace" data-parallax="-0.08">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"
+              alt="Business planning workspace" data-parallax="-0.08">
             <div class="about-visual__card">
               <strong>People-first business architecture</strong>
-              <p>We build systems that help entrepreneurs grow without disconnecting from the people who make that growth possible.</p>
+              <p>We build systems that help entrepreneurs grow without disconnecting from the people who make that
+                growth possible.</p>
             </div>
           </div>
         </div>
@@ -3074,9 +3099,11 @@
       <div class="shell services__layout">
         <div class="services__intro">
           <div class="eyebrow" data-reveal="left">Services</div>
-          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">Hands-on expertise for real <span class="accent-serif">growth</span>.</h2>
+          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">Hands-on expertise for real <span
+              class="accent-serif">growth</span>.</h2>
           <p class="lead" data-reveal="left" style="--delay: 0.1s;">
-            We designed the service experience to feel like a partner sitting inside the business, not an outside consultant dropping off a deck and leaving.
+            We designed the service experience to feel like a partner sitting inside the business, not an outside
+            consultant dropping off a deck and leaving.
           </p>
           <ul class="services__list" data-reveal="left" style="--delay: 0.15s;">
             <li>Research-first strategic thinking</li>
@@ -3096,7 +3123,9 @@
                 </div>
                 <h3>Strategic structure for founders and SMEs.</h3>
                 <p>
-                  Whether you are a startup finding your footing or an established business ready to scale, we provide strategic guidance across the full value chain, from research and ideation through to execution, coaching, and mentoring.
+                  Whether you are a startup finding your footing or an established business ready to scale, we provide
+                  strategic guidance across the full value chain, from research and ideation through to execution,
+                  coaching, and mentoring.
                 </p>
                 <ul class="service-card__bullets">
                   <li>Market research and analysis</li>
@@ -3109,14 +3138,17 @@
                 <a href="#contact" class="service-card__cta">
                   <span>Book a Consultation</span>
                   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </a>
               </div>
 
               <div class="service-card__media">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Consulting team in strategy discussion" data-parallax="0.08">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt="Consulting team in strategy discussion" data-parallax="0.08">
                 <div class="service-card__badge">
                   <strong>From insight to action</strong>
                   <span>We help shape the roadmap and stay involved as the work moves into implementation.</span>
@@ -3134,10 +3166,13 @@
                 </div>
                 <h3>Research-led visibility with regional reach.</h3>
                 <p>
-                  We take a research-first approach to marketing, building strategies grounded in data instead of guesswork. From feasibility studies to full promotional planning, we help businesses position themselves for growth.
+                  We take a research-first approach to marketing, building strategies grounded in data instead of
+                  guesswork. From feasibility studies to full promotional planning, we help businesses position
+                  themselves for growth.
                 </p>
                 <p>
-                  Our reach extends beyond Bahrain. We promote local products to the global market and help connect Bahrain and the Philippines through trade, events, and cultural exchange.
+                  Our reach extends beyond Bahrain. We promote local products to the global market and help connect
+                  Bahrain and the Philippines through trade, events, and cultural exchange.
                 </p>
                 <ul class="service-card__bullets">
                   <li>Digital marketing strategy</li>
@@ -3148,17 +3183,21 @@
                 <a href="#contact" class="service-card__cta">
                   <span>Talk About Your Brand</span>
                   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </a>
               </div>
 
               <div class="service-card__media">
-                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Marketing presentation and business discussion" data-parallax="-0.08">
+                <img
+                  src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt="Marketing presentation and business discussion" data-parallax="-0.08">
                 <div class="service-card__badge">
                   <strong>Promotion with context</strong>
-                  <span>Messaging, market positioning, and event thinking built around where your audience actually is.</span>
+                  <span>Messaging, market positioning, and event thinking built around where your audience actually
+                    is.</span>
                 </div>
               </div>
             </div>
@@ -3173,10 +3212,12 @@
                 </div>
                 <h3>Academic depth with practical employability in mind.</h3>
                 <p>
-                  This is our heart. With deep roots in academia and a PhD-level team, we partner with schools, training institutes, and universities to strengthen programs from the inside out.
+                  This is our heart. With deep roots in academia and a PhD-level team, we partner with schools, training
+                  institutes, and universities to strengthen programs from the inside out.
                 </p>
                 <p>
-                  We support curriculum development, internship and employability design, accreditation readiness, academic advisory, research guidance, and professional development for educators and staff.
+                  We support curriculum development, internship and employability design, accreditation readiness,
+                  academic advisory, research guidance, and professional development for educators and staff.
                 </p>
                 <ul class="service-card__bullets">
                   <li>Academic research advisory</li>
@@ -3189,14 +3230,17 @@
                 <a href="#contact" class="service-card__cta">
                   <span>Discuss Education Support</span>
                   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8.5 4L12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </a>
               </div>
 
               <div class="service-card__media">
-                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Education and training session" data-parallax="0.09">
+                <img
+                  src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt="Education and training session" data-parallax="0.09">
                 <div class="service-card__badge">
                   <strong>Programs that translate into capability</strong>
                   <span>We help institutions design learning that feels rigorous, relevant, and employment-aware.</span>
@@ -3212,20 +3256,25 @@
       <div class="shell">
         <div class="program__intro">
           <div class="eyebrow" data-reveal="left">Programs</div>
-          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">EagleMind Sustainable Studies <span class="accent-serif">(EMSS)</span>.</h2>
+          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">EagleMind Sustainable Studies <span
+              class="accent-serif">(EMSS)</span>.</h2>
           <p class="lead" data-reveal="left" style="--delay: 0.1s;">
-            EMSS is our flagship education initiative, a structured program designed to develop the next generation of educators and professionals through hands-on training, mentorship, and certification.
+            EMSS is our flagship education initiative, a structured program designed to develop the next generation of
+            educators and professionals through hands-on training, mentorship, and certification.
           </p>
         </div>
 
         <div class="program__stage">
           <div class="program__media" data-reveal="mask">
             <div class="program__ribbon">Flagship Education Initiative</div>
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Students and educators collaborating" data-parallax="-0.08">
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"
+              alt="Students and educators collaborating" data-parallax="-0.08">
             <div class="program__overlay">
               <div class="program__quote">
                 <strong>Built for employability, confidence, and real classroom readiness.</strong>
-                <p>Training that combines lectures, case studies, group activities, and practical professional development.</p>
+                <p>Training that combines lectures, case studies, group activities, and practical professional
+                  development.</p>
               </div>
             </div>
           </div>
@@ -3234,7 +3283,8 @@
             <div class="eyebrow">Current Spotlight</div>
             <h3>Teacher Assistant Course</h3>
             <p>
-              A 12-hour work-readiness seminar and workshop built to fast-track teaching careers. Participants gain practical classroom skills, exposure to innovative strategies, and a certificate of participation.
+              A 12-hour work-readiness seminar and workshop built to fast-track teaching careers. Participants gain
+              practical classroom skills, exposure to innovative strategies, and a certificate of participation.
             </p>
 
             <div class="program__chips">
@@ -3271,9 +3321,11 @@
       <div class="shell foundation__layout">
         <div class="foundation__sticky">
           <div class="eyebrow" data-reveal="left">Our Foundation</div>
-          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">What we stand for and how we <span class="accent-serif">build</span>.</h2>
+          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">What we stand for and how we <span
+              class="accent-serif">build</span>.</h2>
           <p class="lead" data-reveal="left" style="--delay: 0.1s;">
-            We are leaders in developing entrepreneurial skills through consultancy, coaching, and mentoring. We believe technology and human capital work best together, and we integrate both into everything we do.
+            We are leaders in developing entrepreneurial skills through consultancy, coaching, and mentoring. We believe
+            technology and human capital work best together, and we integrate both into everything we do.
           </p>
           <div class="foundation__quote" data-reveal="left" style="--delay: 0.15s;">
             <strong>Inspiring beyond expectation is not a slogan.</strong>
@@ -3342,9 +3394,11 @@
       <div class="shell contact__layout">
         <div class="contact__copy">
           <div class="eyebrow" data-reveal="left">Contact</div>
-          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">Ready to <span class="accent-serif">grow</span>?</h2>
+          <h2 class="section-title" data-reveal="left" style="--delay: 0.05s;">Ready to <span
+              class="accent-serif">grow</span>?</h2>
           <p class="lead" data-reveal="left" style="--delay: 0.1s;">
-            Whether you need business consultancy, education support, or want to enroll in one of our programs, we would love to hear from you.
+            Whether you need business consultancy, education support, or want to enroll in one of our programs, we would
+            love to hear from you.
           </p>
 
           <div class="contact__cards">
@@ -3400,7 +3454,8 @@
             </div>
             <div class="consult-card__footer">
               <span>WhatsApp available for faster initial conversations.</span>
-              <a href="https://wa.me/97333191411" target="_blank" rel="noreferrer" style="color: var(--amber-400); font-weight: 700;">Chat on WhatsApp</a>
+              <a href="https://wa.me/97333191411" target="_blank" rel="noreferrer"
+                style="color: var(--amber-400); font-weight: 700;">Chat on WhatsApp</a>
             </div>
           </article>
 
@@ -3429,12 +3484,14 @@
               </div>
               <div class="field field--full">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell us about your goals, timeline, or where you need support." required></textarea>
+                <textarea id="message" name="message"
+                  placeholder="Tell us about your goals, timeline, or where you need support." required></textarea>
               </div>
             </div>
 
             <div class="contact-form__foot">
-              <p class="contact-form__note">This one-page version opens your email client with a drafted message so the file stays fully portable.</p>
+              <p class="contact-form__note">This one-page version opens your email client with a drafted message so the
+                file stays fully portable.</p>
               <button type="submit" class="button button--primary magnetic">
                 <span>Draft My Inquiry</span>
               </button>
@@ -3491,7 +3548,8 @@
 
   <a class="wa-float" href="https://wa.me/97333191411" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.09-.47-.14-.67.16-.2.29-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.14-1.26-.46-2.39-1.47-.89-.78-1.48-1.76-1.66-2.06-.17-.29-.01-.45.13-.6.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.14.19 2.09 3.2 5.07 4.48.71.31 1.26.49 1.69.63.72.22 1.37.19 1.88.11.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.42-.07-.12-.27-.19-.57-.34M12.05 21.79h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.65-.24-.38a9.86 9.86 0 0 1-1.51-5.26C2.16 6.44 6.6 2 12.05 2c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.9-9.88 9.9"/>
+      <path
+        d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.09-.47-.14-.67.16-.2.29-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.14-1.26-.46-2.39-1.47-.89-.78-1.48-1.76-1.66-2.06-.17-.29-.01-.45.13-.6.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.14.19 2.09 3.2 5.07 4.48.71.31 1.26.49 1.69.63.72.22 1.37.19 1.88.11.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.42-.07-.12-.27-.19-.57-.34M12.05 21.79h-.01a9.9 9.9 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.65-.24-.38a9.86 9.86 0 0 1-1.51-5.26C2.16 6.44 6.6 2 12.05 2c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.9-9.88 9.9" />
     </svg>
     <span>WhatsApp</span>
   </a>
@@ -3710,4 +3768,5 @@
     })();
   </script>
 </body>
+
 </html>
