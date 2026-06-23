@@ -2300,108 +2300,6 @@
       letter-spacing: 0.02em;
     }
 
-    /* Modal Styles */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 18, 0.7);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-      padding: 1rem;
-    }
-
-    .modal-overlay.is-active {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    .modal-content {
-      background: var(--cream-100);
-      width: 100%;
-      max-width: 540px;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: var(--shadow-strong);
-      transform: translateY(20px);
-      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-      position: relative;
-    }
-
-    .modal-overlay.is-active .modal-content {
-      transform: translateY(0);
-    }
-
-    .modal-header {
-      padding: 1.5rem 2rem;
-      border-bottom: 1px solid rgba(27, 42, 34, 0.08);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-    }
-
-    .modal-header h3 {
-      font-family: var(--font-display);
-      color: var(--green-900);
-      font-size: 1.25rem;
-      letter-spacing: -0.02em;
-    }
-
-    .modal-close {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: rgba(27, 42, 34, 0.04);
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--text-soft);
-      cursor: pointer;
-      transition: background 0.2s ease, color 0.2s ease;
-    }
-
-    .modal-close:hover {
-      background: rgba(27, 42, 34, 0.08);
-      color: var(--green-900);
-    }
-
-    .modal-body {
-      padding: 2rem;
-      text-align: center;
-      background: var(--cream-100);
-      min-height: 360px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      color: var(--text-soft);
-    }
-
-    .modal-placeholder-box {
-      border: 2px dashed rgba(27, 42, 34, 0.15);
-      border-radius: 16px;
-      padding: 2.5rem 1.5rem;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.4);
-    }
-
-    .modal-placeholder-box strong {
-      display: block;
-      color: var(--green-900);
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-
     [data-reveal] {
       opacity: 0;
       transform: translate3d(0, 28px, 0);
@@ -3416,10 +3314,10 @@
       </div>
 
       <div class="nav__actions">
-        <button onclick="openModal('cal-modal')" class="button button--ghost magnetic">
+        <button onclick="openWhatsApp('Hi EagleMind, I would like to book a consultation.')" class="button button--ghost magnetic">
           <span>Book a Consultation</span>
         </button>
-        <button onclick="openModal('tap-modal')" class="button button--primary magnetic">
+        <button onclick="openWhatsApp('Hi EagleMind, I am interested in enrolling in the Teacher Assistant Course.')" class="button button--primary magnetic">
           <span>Enroll Now</span>
         </button>
       </div>
@@ -3445,10 +3343,10 @@
       </div>
       <div>
         <div class="mobile-nav__cta-group">
-          <button onclick="openModal('tap-modal')" class="button button--primary magnetic">
+          <button onclick="openWhatsApp('Hi EagleMind, I am interested in enrolling in the Teacher Assistant Course.')" class="button button--primary magnetic">
             <span>Enroll Now</span>
           </button>
-          <button onclick="openModal('cal-modal')" class="button button--secondary magnetic">
+          <button onclick="openWhatsApp('Hi EagleMind, I would like to book a consultation.')" class="button button--secondary magnetic">
             <span>Book a Consultation</span>
           </button>
         </div>
@@ -3482,7 +3380,7 @@
             training right here in the Kingdom of Bahrain.
           </p>
           <div class="hero__actions" data-reveal="left" style="--delay: 0.25s;">
-            <button onclick="openModal('cal-modal')" class="button button--primary magnetic">
+            <button onclick="openWhatsApp('Hi EagleMind, I would like to book a consultation.')" class="button button--primary magnetic">
               <span>Book a Consultation</span>
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
@@ -3788,7 +3686,7 @@
                   <li>Value chain approach</li>
                   <li>Coaching and mentoring</li>
                 </ul>
-                <button onclick="openModal('cal-modal')" class="service-card__cta">
+                <button onclick="openWhatsApp('Hi EagleMind, I am interested in Business Management Consultancy.')" class="service-card__cta">
                   <span>Book a Consultation</span>
                   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
@@ -3833,7 +3731,7 @@
                   <li>Promotional events and roadshows</li>
                   <li>Market positioning support</li>
                 </ul>
-                <button onclick="openModal('cal-modal')" class="service-card__cta">
+                <button onclick="openWhatsApp('Hi EagleMind, I would like to discuss marketing and promotion for my brand.')" class="service-card__cta">
                   <span>Talk About Your Brand</span>
                   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
@@ -3880,7 +3778,7 @@
                   <li>Teacher and staff development</li>
                   <li>Pre-incubation program support</li>
                 </ul>
-                <button onclick="openModal('cal-modal')" class="service-card__cta">
+                <button onclick="openWhatsApp('Hi EagleMind, I would like to discuss education support.')" class="service-card__cta">
                   <span>Discuss Education Support</span>
                   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M3.5 8H12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
@@ -3943,7 +3841,7 @@
             </ul>
 
             <div class="program__footer">
-              <button onclick="openModal('tap-modal')" class="button button--primary magnetic">
+              <button onclick="openWhatsApp('Hi EagleMind, I am interested in enrolling in the Teacher Assistant Course.')" class="button button--primary magnetic">
                 <span>Enroll Now</span>
               </button>
               <div class="program__contact">
@@ -4199,51 +4097,6 @@
     </div>
   </footer>
 
-  <!-- ==========================================
-       MODALS (IFRAME PLACEHOLDERS)
-       ========================================== -->
-
-  <div class="modal-overlay" id="cal-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3>Schedule a Call</h3>
-        <button class="modal-close" onclick="closeModals()" aria-label="Close modal">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-placeholder-box">
-          <strong>Cal.com booking widget will load here</strong>
-          <p>Clients can select a date and time to meet with the team without ever leaving your website.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="tap-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3>Secure Checkout</h3>
-        <button class="modal-close" onclick="closeModals()" aria-label="Close modal">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-placeholder-box">
-          <strong>Tap Payments checkout will load here</strong>
-          <p>Students can pay for the Teacher Assistant Course securely using BenefitPay, Apple Pay, or Credit Card
-            directly on this page.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <a class="wa-float" href="https://wa.me/97333191411" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path
@@ -4265,26 +4118,10 @@
       const cursorGlow = document.getElementById("cursorGlow");
       const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      window.openModal = function (id) {
-        const modal = document.getElementById(id);
-        if (modal) {
-          modal.classList.add('is-active');
-          body.style.overflow = 'hidden';
-        }
+      window.openWhatsApp = function (message) {
+        const url = "https://wa.me/97333191411?text=" + encodeURIComponent(message);
+        window.open(url, "_blank", "noopener,noreferrer");
       };
-
-      window.closeModals = function () {
-        document.querySelectorAll('.modal-overlay').forEach(modal => {
-          modal.classList.remove('is-active');
-        });
-        body.style.overflow = '';
-      };
-
-      document.querySelectorAll('.modal-overlay').forEach(modal => {
-        modal.addEventListener('click', function (e) {
-          if (e.target === this) window.closeModals();
-        });
-      });
 
       function startPreloader() {
         requestAnimationFrame(() => {
